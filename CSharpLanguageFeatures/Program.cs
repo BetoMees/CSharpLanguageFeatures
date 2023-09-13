@@ -51,7 +51,10 @@ do
             Console.WriteLine("Please select a valid options");
         }
     }
+    else
+    {
+        Console.WriteLine("Please select a valid options");
+    }
 
-    Console.WriteLine(output);
 } while (!String.IsNullOrEmpty(output));
 
