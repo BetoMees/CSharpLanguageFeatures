@@ -1,4 +1,4 @@
-﻿namespace CSharpLanguageFeatures
+﻿namespace CSharpLanguageFeatures.General
 {
     class IndexAndRanges
     {
@@ -16,7 +16,7 @@
             Console.WriteLine(words[^1]);
 
             // The range operator (..) defines a range
-            Console.WriteLine(String.Join(" ", words[0..3]));
+            Console.WriteLine(string.Join(" ", words[0..3]));
 
             // Works with variable as well
 
@@ -24,7 +24,7 @@
             Console.WriteLine(words[index]);
 
             Range range = 2..index;
-            Console.WriteLine(String.Join(" ", words[range]));
+            Console.WriteLine(string.Join(" ", words[range]));
         }
     }
 }
