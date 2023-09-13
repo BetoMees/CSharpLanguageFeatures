@@ -1,5 +1,8 @@
-﻿namespace CSharpLanguageFeatures.General
+﻿using CSharpLanguageFeatures.Utils;
+
+namespace CSharpLanguageFeatures.General
 {
+    [Show]
     class DeconstructCustom
     {
         private class Planet

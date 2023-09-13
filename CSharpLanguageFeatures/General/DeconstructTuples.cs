@@ -1,5 +1,8 @@
-﻿namespace CSharpLanguageFeatures.General
+﻿using CSharpLanguageFeatures.Utils;
+
+namespace CSharpLanguageFeatures.General
 {
+    [Show]
     class DeconstructTuples
     {
         private static (decimal, decimal, decimal) GetValues(string name) => name switch
