@@ -20,14 +20,14 @@ assemblies.ToList().ForEach(assembly =>
         }
     }
 });
-
+listExamples = listExamples.OrderBy(s => s.FullName).ToList();
 const int SECTION_SPACE = 50;
 void Print(int pos)
 {
     string section = "";
     Console.Clear();
     Console.WriteLine("Select one of the examples to execute or Esc to leave:");
-    foreach (var (type, i) in listExamples.OrderBy(s => s.FullName).Select((value, i) => (value, i)))
+    foreach (var (type, i) in listExamples.Select((value, i) => (value, i)))
     {
         // Ignore current domain and class name
         if (type.FullName?.Split(".")[1..^1] is string[] splited && splited.Length > 0)
